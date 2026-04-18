@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCTV - Seguridad Pro | Cámaras de Vigilancia</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/cctv.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">SEGURIDAD<span>PRO</span></div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="CCTV.HTML" class="active">CCTV</a></li>
+        <li><a href="controldeacceso.html">Acceso</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <header class="page-header">
+      <h1>Sistemas CCTV</h1>
+      <p>TECNOLOGÍA DE VIGILANCIA EN ALTA DEFINICIÓN</p>
+    </header>
+
+    <main class="products-container">
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="../img/camara.jpg" alt="Domo IP 4K" class="product-img" />
+          <div class="product-info">
+            <h3>Domo IP 4K Ultra</h3>
+            <ul class="specs">
+              <li>Resolución 8MP (4K)</li>
+              <li>Visión Nocturna 30m</li>
+              <li>Resistencia IP67 (Exterior)</li>
+              <li>Micrófono Integrado</li>
+            </ul>
+            <div class="price-tag">
+              <span class="price">$120.00</span>
+              <a href="#" class="btn-buy">Cotizar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="../img/bullet.jpg" alt="Bullet Pro" class="product-img" />
+          <div class="product-info">
+            <h3>Bullet Pro Inteligente</h3>
+            <ul class="specs">
+              <li>Detección de Humanos y Vehículos</li>
+              <li>Lente Varifocal Motorizado</li>
+              <li>Alarma con Luz Estroboscópica</li>
+              <li>Ranura MicroSD 256GB</li>
+            </ul>
+            <div class="price-tag">
+              <span class="price">$155.00</span>
+              <a href="#" class="btn-buy">Cotizar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="../img/ptz.jpg" alt="PTZ Industrial" class="product-img" />
+          <div class="product-info">
+            <h3>PTZ 360° Industrial</h3>
+            <ul class="specs">
+              <li>Zoom Óptico 25x</li>
+              <li>Seguimiento Automático</li>
+              <li>Alcance IR 150 metros</li>
+              <li>Giro infinito 360 grados</li>
+            </ul>
+            <div class="price-tag">
+              <span class="price">$450.00</span>
+              <a href="#" class="btn-buy">Cotizar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>&copy; 2026 Seguridad Pro - Tecnología en Protección.</footer>
+
+    <div id="modalCotizacion" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 style="font-weight: 800">Solicitar Cotización</h2>
+        <p style="color: var(--text-gray); font-size: 0.9rem">
+          Completa los detalles para tu pedido:
+        </p>
+
+        <form id="formCotizar">
+          <label>Nombre Completo:</label>
+          <input type="text" placeholder="Tu nombre" required />
+
+          <label>Método de Pago Preferido:</label>
+          <select required>
+            <option value="">Seleccione una opción...</option>
+            <option value="efectivo">Efectivo al instalar</option>
+            <option value="anticipado">Pago Anticipado (5% Descuento)</option>
+            <option value="transferencia">Transferencia Bancaria</option>
+          </select>
+
+          <label>¿Deseas incluir instalación?</label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="instala" value="si" checked />
+              <span>Sí, incluir servicio técnico</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="instala" value="no" />
+              <span>No, solo el equipo</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../js/cctv.js"></script>
+  </body>
+</html>

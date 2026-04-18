@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seguridad Pro - CCTV y Control de Acceso</title>
+    <link rel="shortcut icon" href="../img/cctv.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contacto.css" />
+  </head>
+
+  <body class="contacto-page">
+    <nav class="navbar">
+      <div class="logo">SEGURIDAD<span>PRO</span></div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="cctv.html">CCTV</a></li>
+        <li><a href="controldeacceso.html">Acceso</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main class="contenedor">
+      <div class="glass-form">
+        <h1>Contacto de Seguridad</h1>
+        <p>Solicita una cotización para tu sistema</p>
+
+        <form action="#">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ej: Juan"
+            required
+          />
+
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="Ej: Pérez"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="correo@empresa.com"
+            required
+          />
+
+          <div class="gender-group">
+            <label>Género:</label>
+            <div class="gender-options">
+              <label class="radio-option">
+                <input type="radio" name="sexo" value="masculino" />
+                Masculino
+              </label>
+
+              <label class="radio-option">
+                <input type="radio" name="sexo" value="femenino" />
+                Femenino
+              </label>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <input type="submit" value="Enviar Datos" />
+            <input type="reset" value="Limpiar" />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2026 Seguridad Pro - Tecnología en Protección.
+    </footer>
+  </body>
+</html>

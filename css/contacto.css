@@ -1,0 +1,132 @@
+body.contacto-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenedor principal: ocupa el espacio libre entre navbar y footer */
+.contenedor {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+/* Formulario */
+.glass-form {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 32px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.glass-form h1,
+.glass-form p {
+  text-align: center;
+}
+
+.glass-form h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.glass-form p {
+  margin-bottom: 24px;
+}
+
+/* Inputs y etiquetas */
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Grupo género */
+.gender-group {
+  margin-bottom: 20px;
+}
+
+.gender-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+/* Botones */
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+input[type="submit"] {
+  background: #007bff;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background: #0056b3;
+  transform: translateY(-3px);
+}
+
+input[type="reset"] {
+  background: #e0e0e0;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenedor {
+    padding: 20px 12px;
+  }
+
+  .glass-form {
+    padding: 24px 20px;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+}

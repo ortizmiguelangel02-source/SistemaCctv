@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seguridad Pro | CCTV y Control de Acceso</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">SEGURIDAD<span>PRO</span></div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Inicio</a></li>
+        <li><a href="./pages/cctv.html">CCTV</a></li>
+        <li><a href="./pages/controldeacceso.html">Acceso</a></li>
+        <li><a href="./pages/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Protege tu hogar o negocio hoy mismo <br />Cámaras, alarmas y control de acceso con instalación incluida</h1>
+        <p>
+          Protegemos lo que más te importa con tecnología de última generación.
+        </p>
+      </div>
+      <button class="btn" id="trigger-chat">Solicitar Asesoría Gratis</button>
+    </header>
+
+    <section class="container my-5">
+      <div
+        id="carouselExample"
+        class="carousel slide carousel-fade rounded-4 overflow-hidden shadow"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/cctv 2.jpg"
+              class="d-block w-100"
+              alt="Sistema de cámaras de seguridad"
+              style="height: 420px; object-fit: cover"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/cctv 3.jpg"
+              class="d-block w-100"
+              alt="Monitoreo de cámaras CCTV"
+              style="height: 420px; object-fit: cover"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/cctv 4.jpg"
+              class="d-block w-100"
+              alt="Tecnología de videovigilancia"
+              style="height: 420px; object-fit: cover"
+            />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+     <section class="container">
+      <div class="grid">
+        <div class="card">
+          <span class="icon">📹</span>
+          <h3>Sistemas CCTV</h3>
+          <p>Cámaras IP de alta definición 4K con visión nocturna avanzada.</p>
+          <a href="./pages/cctv.html" class="card-link">Explorar Cámaras →</a>
+        </div>
+        <div class="card">
+          <span class="icon">🔐</span>
+          <h3>Control de Acceso</h3>
+          <p>Biometría, reconocimiento facial y cerraduras autónomas.</p>
+          <a href="./pages/controldeacceso.html" class="card-link"
+            >Ver Tecnologías →</a
+          >
+        </div>
+        <div class="card">
+          <span class="icon">🚨</span>
+          <h3>Alarmas 24/7</h3>
+          <p>Sistemas conectados directamente a tu smartphone.</p>
+          <a href="#" class="card-link">Saber Más →</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="chat-container">
+      <div id="chat-window">
+        <div id="chat-header">
+          <span>Asistente Seguridad Pro</span>
+          <button
+            onclick="cerrarChat()"
+            style="
+              background: none;
+              border: none;
+              color: inherit;
+              font-size: 24px;
+              cursor: pointer;
+            "
+          >
+            &times;
+          </button>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+          <input
+            type="text"
+            id="user-name-input"
+            placeholder="Dime tu nombre..."
+          />
+          <button
+            id="send-name-btn"
+            onclick="iniciarChat()"
+            style="
+              background: var(--primary);
+              border: none;
+              padding: 10px 15px;
+              border-radius: 8px;
+              cursor: pointer;
+              font-weight: 800;
+            "
+          >
+            OK
+          </button>
+
+          <div
+            id="options-grid"
+            style="display: none; gap: 6px; flex-wrap: wrap"
+          >
+            <button class="chat-option" onclick="responder('precios')">
+              Ver Precios
+            </button>
+            <button class="chat-option" onclick="responder('instala')">
+              Instalación
+            </button>
+            <button class="chat-option" onclick="responder('wpp')">
+              Hablar con Asesor
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>&copy; 2026 Seguridad Pro - Tecnología en Protección.</footer>
+
+    <script src="./js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Acceso - Seguridad Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/control-acceso.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SEGURIDAD<span>PRO</span></div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="cctv.html">CCTV</a></li>
+            <li><a href="controldeacceso.html" class="active">Acceso</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Control de Acceso</h1>
+        <p>SEGURIDAD BIOMÉTRICA Y GESTIÓN DE PERSONAL</p>
+    </header>
+
+    <main class="products-container">
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="../img/terminal.jpg" alt="Lector Facial" class="product-img">
+                <div class="product-info">
+                    <h3>Terminal Facial Pro</h3>
+                    <ul class="specs">
+                        <li>Reconocimiento en 0.2 segundos</li>
+                        <li>Capacidad para 3,000 rostros</li>
+                        <li>Detección de mascarilla</li>
+                        <li>Pantalla táctil de 4.3 pulgadas</li>
+                    </ul>
+                    <div class="price-tag">
+                        <span class="price">$280.00</span>
+                        <a href="#" class="btn-buy">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../img/cerradura.jpg" alt="Cerradura Biométrica" class="product-img">
+                <div class="product-info">
+                    <h3>Cerradura Inteligente X7</h3>
+                    <ul class="specs">
+                        <li>Huella digital y código PIN</li>
+                        <li>Apertura vía App móvil</li>
+                        <li>Llave física de emergencia</li>
+                        <li>Alarma por intentos fallidos</li>
+                    </ul>
+                    <div class="price-tag">
+                        <span class="price">$195.00</span>
+                        <a href="#" class="btn-buy">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../img/lector.jpg" alt="Lector de tarjetas" class="product-img">
+                <div class="product-info">
+                    <h3>Lector de Proximidad RFID</h3>
+                    <ul class="specs">
+                        <li>Protocolo Wiegand estándar</li>
+                        <li>Resistente a la intemperie (IP66)</li>
+                        <li>Indicador LED de estado</li>
+                        <li>Diseño ultra delgado</li>
+                    </ul>
+                    <div class="price-tag">
+                        <span class="price">$45.00</span>
+                        <a href="#" class="btn-buy">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Seguridad Pro - Tecnología en Protección.
+    </footer>
+
+    <div id="modalCotizacion" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Solicitar Cotización</h2>
+            <p style="color: var(--text-gray); font-size: 0.9rem; margin-top: 5px;">Completa los detalles para tu pedido:</p>
+            
+            <form id="formCotizar">
+                <label>Nombre Completo:</label>
+                <input type="text" placeholder="Tu nombre" required>
+                
+                <label>Método de Pago Preferido:</label>
+                <select required>
+                    <option value="">Seleccione una opción...</option>
+                    <option value="efectivo">Efectivo al instalar</option>
+                    <option value="anticipado">Pago Anticipado (5% Descuento)</option>
+                    <option value="transferencia">Transferencia Bancaria</option>
+                    <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                </select>
+                
+                <label>¿Deseas incluir instalación?</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="instala" value="si" checked> 
+                        <span>Sí, incluir servicio técnico</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="instala" value="no"> 
+                        <span>No, solo el equipo</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/control-acceso.js"></script>
+</body>
+</html>
